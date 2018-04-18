@@ -78,7 +78,7 @@ class StringIO
   #
   # @return [String] The zero-byte terminated string read from the byte stream
   def cstring
-    gets("\0")[0..-2].force_encoding 'UTF-8'
+    gets("\0")[0..-2].force_encoding 'UTF-8' rescue ''
   end
 
 end
