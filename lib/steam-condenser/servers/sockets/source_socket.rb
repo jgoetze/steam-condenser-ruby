@@ -27,7 +27,7 @@ module SteamCondenser::Servers::Sockets
     #
     # @return [BasePacket] The packet replied from the server
     def reply
-      receive_packet 1400
+      receive_packet 2800
       is_compressed = false
       packet_checksum = 0
 
